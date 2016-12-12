@@ -4,6 +4,12 @@ import sys
 import csv
 import re
 
+if len(sys.argv) >= 2:
+	topic = sys.argv[1]
+else:
+	print('I\'ve assumed topic as Trump')
+	topic = 'Trump'
+
 consumer_key = 'KLojskDD6g7bAqbq6H7U3xSFI'
 consumer_secret = 'OhHYnffIezWxn9QCl5eLuOTdGNiFR8yLl3Q8wZSiBGuwkhCEHl'
 
@@ -15,7 +21,7 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-public_tweets = api.search('Trump')
+public_tweets = api.search(topic)
 
 # for tweet in public_tweets:
 # 	print(tweet.text)
