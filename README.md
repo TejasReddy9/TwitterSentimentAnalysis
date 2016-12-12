@@ -7,10 +7,10 @@ Sentiment analysis is one part of Natural Language Processing (NLP).
 * textblob (consistent API for common NLP tasks) https://textblob.readthedocs.io/en/dev/
 
 ## Usage
-After installling all the dependencies, run the python script 
+After installling all the dependencies, run the python script with an argument after sentanal.py denoting the topic in which you are intersted..
 
 ```
-python sentanal.py 
+python sentanal.py topic
 ```
 
 ## Example
