@@ -10,11 +10,11 @@ else:
 	print('I\'ve assumed topic as Trump')
 	topic = 'Trump'
 
-consumer_key = 'KLojskDD6g7bAqbq6H7U3xSFI'
-consumer_secret = 'OhHYnffIezWxn9QCl5eLuOTdGNiFR8yLl3Q8wZSiBGuwkhCEHl'
+consumer_key = open('consumer_key.txt','r').read()
+consumer_secret = open('consumer_secret.txt','r').read()
 
-access_token = '2536792886-RqEEyyxd9SajCUzw2VlKWQm4DeSJTRyD5wPzSqO'
-access_token_secret = 'R6jkmz00V4eC286QR9cmZ0DWiX9TdoQukLbF4z3wtwHSo'
+access_token = open('access_token.txt','r').read()
+access_token_secret = open('access_token_secret.txt','r').read()
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
